@@ -1,29 +1,16 @@
-# CORBAN ENTERPRISES Website
+CORBAN ENTERPRISES - TEXT ONLY WEBSITE
 
-This is a static website prepared for GitHub Pages.
+This version removes:
+- Animated drone
+- India map
+- Hero illustration
+- SVG logo graphics
+- Decorative image-like background elements
+- External image files
 
-## Upload instructions
-
-1. Extract the ZIP file.
-2. Open your GitHub repository.
-3. Click **Add file > Upload files**.
-4. Upload `index.html` and the complete `assets` folder.
-5. Click **Commit changes**.
-6. Open **Settings > Pages**.
-7. Under **Build and deployment**, select:
-   - Source: Deploy from a branch
-   - Branch: main
-   - Folder: /(root)
-8. Click Save.
-
-Your website will be available at:
-
-https://15gisrs-eng.github.io/CORBAN/
-
-Important: Delete or replace any old `index.html`, `style.css`, and `script.js` files before uploading this version.
-
-
-UPDATED FEATURES
-- Animated drone with scanning beam in the hero section
-- Interactive India service coverage map
-- Clickable regional markers with changing service descriptions
+UPLOAD TO GITHUB:
+1. Extract this ZIP.
+2. Open the extracted CORBAN_WEBSITE_NO_IMAGES folder.
+3. Upload index.html and the complete assets folder to the repository root.
+4. Replace existing files and commit changes.
+5. Wait 1 to 3 minutes, then refresh the website using Ctrl + F5.

@@ -30,23 +30,3 @@ const observer = new IntersectionObserver(
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 document.getElementById('year').textContent = new Date().getFullYear();
 
-
-// Interactive India coverage markers
-const regionInfo = document.getElementById('regionInfo');
-const regionMarkers = document.querySelectorAll('.map-marker');
-
-regionMarkers.forEach(marker => {
-  marker.addEventListener('click', () => {
-    regionMarkers.forEach(item => item.classList.remove('active'));
-    marker.classList.add('active');
-
-    const title = marker.dataset.region;
-    const detail = marker.dataset.detail;
-
-    regionInfo.innerHTML = `
-      <span>Selected region</span>
-      <strong>${title}</strong>
-      <p>${detail}</p>
-    `;
-  });
-});
