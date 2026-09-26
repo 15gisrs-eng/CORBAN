@@ -154,6 +154,7 @@ a {
 }
 
 .service-card {
+  display: none;
   background: #ffffff;
   border: 1px solid #d9e3ea;
   padding: 26px;
