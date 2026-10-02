@@ -7,12 +7,14 @@
   --navy-dark: #0a1f2d;
   --blue: #2b7a9b;
   --blue-soft: #eaf4f9;
+  --blue-lighter: #d4e8f0;
   --line: #dfe9ef;
   --card: #ffffff;
   --text: #203244;
   --muted: #5f7383;
   --bg: #f5f8fb;
   --shadow: 0 18px 40px rgba(15, 47, 74, 0.08);
+  --shadow-sm: 0 8px 20px rgba(15, 47, 74, 0.06);
 }
 
 html {
@@ -329,6 +331,12 @@ img {
   text-align: center;
 }
 
+.section-heading p {
+  color: var(--muted);
+  font-size: 1.1rem;
+  margin-top: 12px;
+}
+
 .service-grid,
 .info-grid {
   display: grid;
@@ -365,6 +373,231 @@ img {
   padding: 88px 0 32px;
   background: linear-gradient(135deg, #f6fbff 0%, #edf4fa 100%);
   border-bottom: 1px solid var(--line);
+}
+
+.webgis-banner {
+  padding: 120px 0 48px;
+  background: linear-gradient(135deg, #0f2f4a 0%, #1a4a6e 50%, #2b7a9b 100%);
+  border-bottom: none;
+  color: #fff;
+}
+
+.webgis-banner h1 {
+  color: #fff;
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  margin-bottom: 24px;
+}
+
+.webgis-banner .section-tag {
+  color: #d4e8f0;
+}
+
+.banner-description {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.15rem;
+  max-width: 600px;
+}
+
+.webgis-hero {
+  background: #f5f8fb;
+  padding: 80px 0;
+}
+
+.webgis-intro {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.intro-content h2 {
+  font-size: 2.2rem;
+  margin-bottom: 24px;
+  color: var(--navy);
+}
+
+.intro-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+
+.features-section {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 28px;
+  margin-top: 60px;
+}
+
+.feature-card {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 36px 28px;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: var(--shadow-sm);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: var(--blue);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+  display: block;
+}
+
+.feature-card h3 {
+  color: var(--navy);
+  font-size: 1.3rem;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.use-cases-section {
+  background: linear-gradient(135deg, #eff6fb 0%, #eaf4f9 100%);
+  padding: 100px 0;
+}
+
+.use-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  margin-top: 60px;
+}
+
+.use-case-card {
+  background: #fff;
+  border-left: 4px solid var(--blue);
+  border-radius: 12px;
+  padding: 32px 28px;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+}
+
+.use-case-card:hover {
+  box-shadow: var(--shadow);
+  transform: translateX(4px);
+}
+
+.use-case-card h3 {
+  color: var(--navy);
+  font-size: 1.2rem;
+  margin: 0 0 12px;
+  font-weight: 600;
+}
+
+.use-case-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+  margin: 0;
+  line-height: 1.7;
+}
+
+.benefits-section {
+  background: #fff;
+  padding: 100px 0;
+}
+
+.alt-split {
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+.benefits-list h2 {
+  color: var(--navy);
+  font-size: 2rem;
+  margin-bottom: 36px;
+}
+
+.benefits-check {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.benefits-check li {
+  color: var(--text);
+  font-size: 1.05rem;
+  padding-left: 32px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.benefits-check li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--blue);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.benefit-highlight-card {
+  background: linear-gradient(135deg, #eaf4f9 0%, #d4e8f0 100%);
+  border: 1px solid var(--blue-soft);
+  border-radius: 16px;
+  padding: 42px 32px;
+  text-align: center;
+}
+
+.benefit-highlight-card .mini-label {
+  color: var(--blue);
+}
+
+.benefit-highlight-card h3 {
+  color: var(--navy);
+  font-size: 1.8rem;
+  margin: 12px 0;
+}
+
+.benefit-highlight-card p {
+  color: var(--text);
+  margin: 12px 0 0;
+}
+
+.cta-section {
+  background: linear-gradient(135deg, #0f2f4a 0%, #1a4a6e 100%);
+  padding: 100px 0;
+  text-align: center;
+}
+
+.cta-container {
+  max-width: 700px;
+}
+
+.cta-card {
+  color: #fff;
+}
+
+.cta-card h2 {
+  color: #fff;
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+}
+
+.cta-card p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 32px;
 }
 
 .check-list {
@@ -431,11 +664,22 @@ img {
   margin: 0;
 }
 
+.single-service {
+  grid-template-columns: 1fr;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.centered-card {
+  text-align: center;
+}
+
 @media (max-width: 900px) {
   .hero-layout,
   .split-inner,
   .two-col,
-  .contact-layout {
+  .contact-layout,
+  .alt-split {
     grid-template-columns: 1fr;
   }
 
@@ -443,6 +687,14 @@ img {
   .info-grid,
   .large-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .service-grid.single-service {
+    grid-template-columns: 1fr;
+  }
+
+  .section {
+    padding: 70px 0;
   }
 }
 
@@ -469,7 +721,9 @@ img {
   .stats-bar,
   .service-grid,
   .info-grid,
-  .large-grid {
+  .large-grid,
+  .features-grid,
+  .use-cases-grid {
     grid-template-columns: 1fr;
   }
 
@@ -479,5 +733,9 @@ img {
 
   .page-banner {
     padding-top: 68px;
+  }
+
+  .webgis-banner {
+    padding: 80px 0 32px;
   }
 }
