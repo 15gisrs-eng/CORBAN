@@ -336,40 +336,29 @@ img {
   gap: 20px;
 }
 
-.service-grid.single-service {
-  grid-template-columns: minmax(0, 1fr);
-  max-width: 720px;
-  margin: 0 auto;
+.large-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .service-card {
   padding: 26px 22px;
 }
 
-.service-card.centered-card {
-  text-align: center;
+.large-card {
+  min-height: 220px;
 }
 
-.service-card.centered-card h3 {
-  font-size: 2rem;
+.service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background: var(--blue-soft);
+  color: var(--navy);
+  font-weight: 700;
   margin-bottom: 18px;
-}
-
-.webgis-features {
-  list-style: none;
-  padding: 0;
-  margin: 18px 0 0;
-  display: grid;
-  gap: 10px;
-  color: var(--text);
-  text-align: left;
-}
-
-.webgis-features li::before {
-  content: "✓";
-  color: var(--blue);
-  font-weight: bold;
-  margin-right: 10px;
 }
 
 .page-banner {
@@ -451,12 +440,9 @@ img {
   }
 
   .service-grid,
-  .info-grid {
+  .info-grid,
+  .large-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .service-grid.single-service {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -482,11 +468,8 @@ img {
 
   .stats-bar,
   .service-grid,
-  .info-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .service-grid.single-service {
+  .info-grid,
+  .large-grid {
     grid-template-columns: 1fr;
   }
 
